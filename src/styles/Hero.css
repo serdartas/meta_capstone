@@ -1,0 +1,15 @@
+.hero {
+    margin: 100px 0;
+    height: 388px;
+    background-color: #495E57;
+    display: flex;
+}
+
+#heroLeft{
+    margin: 0 15px;;
+    color:#fff;
+}
+
+#heroLeft *{
+    margin-top: 15px;
+}

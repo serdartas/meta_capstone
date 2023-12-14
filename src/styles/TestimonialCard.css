@@ -1,0 +1,44 @@
+.testimonialCard{
+    width: 200px;
+    height: 200px;
+    background-color: #ffffff;
+    color: #495e57;
+    font-family: Karla;
+    font-size: 1rem;
+
+}
+
+#testimonialWrapper{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+    height: 180px;
+}
+
+#testimonialHeader{
+    display: flex;
+    flex-direction: row;
+}
+
+#testimonialHeader img{
+    width: 80px;
+    height: 80px;
+}
+
+#testimonialHeader p{
+    align-self: center;
+}
+
+#testimonialComment {
+    margin: 0 15px;
+    flex-grow: 1;
+}
+
+#testimonialStars {
+    margin: 0 15px;
+}
+
+.fa-star {
+    color: ffff00;
+}

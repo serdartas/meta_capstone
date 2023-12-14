@@ -3,13 +3,28 @@
     height: 388px;
     background-color: #495E57;
     display: flex;
+    flex-direction: row;
+    float: none;
+    justify-content: center;
 }
 
 #heroLeft{
-    margin: 0 15px;;
+    margin: 0 15px;
+    width: 400px;
     color:#fff;
 }
 
 #heroLeft *{
     margin-top: 15px;
 }
+
+#heroRight{
+    margin: 0 15px;
+}
+
+#heroRight img{
+    width: 420px;
+    height: 480px;
+    border-radius: 50px;
+}
+

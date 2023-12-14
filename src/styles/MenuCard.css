@@ -1,0 +1,50 @@
+.menuCard{
+    width: 260px;
+    height: 380px;
+    background-color: #EDEFEE;
+    box-shadow: -2px 2px #DDDDDD;
+}
+
+.menuCard img{
+    height: 175px;
+    width: 260px;
+    padding: 0;
+}
+
+.menuCard p, h4, h5{
+    font-family: Karla;
+    padding: 5px;
+}
+
+.menuCard h4, h5{
+    font-weight:500;
+}
+
+.menuCard h4{
+    font-size: 1rem;
+}
+
+.menuCard h5{
+    font-size: 0.7rem;
+}
+
+#content {
+    height: 205px;
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+}
+
+#cardTitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#cardBody{
+    flex-grow: 1;
+}
+
+#cardFooter {
+    margin-bottom: 5px;
+}

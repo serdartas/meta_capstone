@@ -7,7 +7,7 @@ nav ul li {
   list-style-type: none;
 }
 
-nav li a {
+.menuItem {
   height: max-content;
   text-transform: uppercase;
   text-decoration: none;
@@ -16,7 +16,7 @@ nav li a {
   color: #000;
 }
 
-nav li a:hover {
+.menuItem:hover {
   color: #495e57;
 }
 

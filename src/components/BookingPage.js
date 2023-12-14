@@ -1,9 +1,11 @@
+import BookingForm from "./BookingForm";
+import "../styles/BookingPage.css";
 
 function BookingPage(params) {
     return(
-        <>
-            This is the booking page
-        </>
+        <section id="bookingSection">
+            <BookingForm />
+        </section>
     );
 }
 

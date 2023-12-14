@@ -1,0 +1,18 @@
+[
+    {
+        "id":0,
+        "occassion":"Anniversary"
+    },
+    {
+        "id":1,
+        "occassion":"Birthday"
+    },
+    {
+        "id":2,
+        "occassion":"Proposal"
+    },
+    {
+        "id":3,
+        "occassion":"Wedding"
+    }
+]

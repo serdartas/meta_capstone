@@ -1,7 +1,14 @@
 #bookingSection{
-    height: 600px;
     margin: 100px 0;
-    background-color: #ffffff;
+    height: 388px;
+    background-color: #495E57;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
     float: none;
     justify-content: center;
+}
+
+#bookingSectionHeader{
+    margin: 0 25px;
 }

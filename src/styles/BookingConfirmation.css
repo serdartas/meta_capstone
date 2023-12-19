@@ -1,0 +1,9 @@
+#divBookingConfirmation{
+    display: flex;
+    flex-direction: column;
+    margin: 0 50px;
+}
+
+#divBookingConfirmation p{
+    /* margin: 15px 100px; */
+}

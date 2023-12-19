@@ -1,7 +1,6 @@
 import "../styles/MenuCard.css";
 
 function MenuCard(props){
-    console.log(props.ItemImage);
     return(
         <article className="menuCard">
             <img src={props.ItemImage} alt={props.ItemName} />

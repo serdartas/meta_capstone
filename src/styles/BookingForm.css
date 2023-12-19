@@ -1,12 +1,30 @@
 #bookingWrapper{
-    /* height: 400px;
     display: flex;
-    flex-direction: column; */
+    flex-direction: column;
+    margin: 0 25px;
 }
 
-form{
-    /* display: flex;
+.formColumn{
+    content: "";
+    display: flex;
     flex-direction: column;
-    gap: 20px;
-    color: black; */
+    clear: both;
+    width: 400px;
+    border-width: 1px;
+    border-color: #000000;
+}
+
+.formRow{
+    content: "";
+    display: flex;
+    flex-direction: column;
+    clear: both;
+    width: 400px;
+    border-width: 1px;
+    border-color: #000000;
+    margin-bottom: 5px;
+}
+
+form button{
+    margin-top: 15px;
 }

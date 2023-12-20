@@ -6,14 +6,23 @@ import { useNavigate } from "react-router-dom";
 import "../styles/BookingForm.css";
 
 export default function BookingForm(props){
-    const [toDay, setToDay] = useState(new Date());
+    const [toDay, setToDay] = useState(new Date((new Date()).setHours(0,0,0,0)));
     const [bookingDate, setBookingDate] = useState(toDay.toLocaleDateString());
-    const [bookingTime, setBookingTime] = useState("17:00");
+    const [bookingTime, setBookingTime] = useState("Select a time...");
     const [numberOfGuests, setNumberOfGuests] = useState(1);
     const [occassion, setOccassion] = useState("Anniversary");
     const [formSubmitted, setFormSubmitted] = useState(false);
+    const [formValid, setFormValid] = useState(false);
 
     const navigate = useNavigate();
+
+    useEffect(() => {
+        setFormValid(
+            // booking date is today or a later date
+            new Date(bookingDate.substring(6,10), parseInt(bookingDate.substring(3,5))-1, bookingDate.substring(0,2)) >= toDay
+            && numberOfGuests > 0 && numberOfGuests < 11 && bookingTime !== "Select a time..."
+        )
+    }, [bookingDate, bookingTime, numberOfGuests, occassion])
 
     useEffect(() => {
         const action = {
@@ -57,6 +66,7 @@ export default function BookingForm(props){
 
     return(
         <div id="bookingWrapper">
+            <p style={formValid?{display:"none"}:{display:"inline"}} className="validator">Validation Error</p>
             <form>
                 <div className="formColumn">
                     <div className="formRow">
@@ -86,7 +96,7 @@ export default function BookingForm(props){
                         </select>
                     </div>
                 </div>
-                <button onClick={submitForm} >Make Your reservation</button>
+                <button onClick={submitForm} id="btnSubmit" disabled={!formValid} >Make Your reservation</button>
             </form>
         </div>
     )
